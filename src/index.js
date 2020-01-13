@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import styled from 'styled-components'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Import components
+import { SpellCard } from './components/SpellCard';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Import data
+import Spells from "./data/Spells"
+
+const SpellBook = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`
+
+ReactDOM.render(
+    <SpellBook>
+    {Spells.spells.map((spell) => {
+        return <SpellCard spell={spell}>
+
+        </SpellCard>
+    })}
+    </SpellBook>,
+    document.getElementById('root')
+  );
