@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
-import './index.css';
+import styled from 'styled-components';
 
 export default class SpellCard extends Component {
     render () {
