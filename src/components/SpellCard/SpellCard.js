@@ -54,6 +54,8 @@ export default class SpellCard extends Component {
                         <h5>Components</h5>
                         <p>{ components }</p>
                     </TextBox>
+                </Row>
+                <Row>
                     <TextBox>
                         <h5>Range</h5>
                         <p>{ range }</p>
