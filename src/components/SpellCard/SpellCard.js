@@ -12,7 +12,7 @@ export default class SpellCard extends Component {
         display: flex;
         flex-flow: column;
         width: 300px;
-        height: 302px;
+        min-height: 302px;
         margin: 5px;
         h2, h5, p {
             text-align: center;
@@ -34,8 +34,6 @@ export default class SpellCard extends Component {
 
         const TextBoxLarge = styled(TextBox)`
         flex: 99999;
-        overflow: hidden;
-        text-overflow: ellipsis;
         height: 100%;
         p {
             text-align: left;
